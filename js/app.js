@@ -56,7 +56,7 @@ yargs.command({
   },
   handler: (x)=>{
     data.addPerson(x.id ,x.fname ,x.lname)
-    console.log(`- you have already added an item *id =${x.id}`)
+    console.log(`- ✅ you have already added an item *id =${x.id}`)
   }
 })
 
