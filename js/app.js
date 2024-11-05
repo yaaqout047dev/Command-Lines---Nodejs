@@ -1,41 +1,3 @@
-
-
-// const fs = require('fs');
-
-// fs.writeFileSync('data1.txt','- Dev Yaaqout Tareq')
-
-
-// fs.appendFileSync('data1.txt',' & MERN Stack Developer')
-
-// console.log(fs.readFileSync('data1.txt').toString()) 
-
-// ----------------------------------------------------- 
-
-// const x = require('./allData');
-
-// console.log(x.lName)
-
-
-// --------------------------------------- 
-
-// const validator = require('validator');
-
-// console.log(validator.isEmail('mo@gmail.com'))
-
-// -------------------------- #Lec-2 . ---------------- 
-
-// const command = process.argv[2]
-
-// if(command === 'add'){
-//   console.log('you have added an item')
-// }else if(command === 'delete'){
-//   console.log('you have deleted an item')
-// }else{
-//   console.log('Error')
-// }
-// ------------------------------------------------ #Lec-3 . ------
-
-
 const data = require('./data');
 const yargs = require('yargs');
 
@@ -97,3 +59,13 @@ yargs.command ({
 })
 
 yargs.parse()
+
+
+// ----------------- #Command Lines . ----------------- 
+
+/* 
+1- add -> node js/app.js --id='9' --fname='Yaaqout' --lname='Tareq' 
+2- delete -> node js/app.js delete --id='9'
+3- read -> node js/app.js read --id='9'
+4- list -> node js/app.js list
+*/ 
